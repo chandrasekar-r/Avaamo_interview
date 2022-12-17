@@ -1,0 +1,13 @@
+{
+    "name": "ExpressAPP",
+    "version": "1.0.0",
+    "description": "Run Expressjs  App on Docker",
+    "author": "Chandrasekar <rcsekar.v1@gmail.com>",
+    "main": "index.js",
+    "dependencies": {
+        "express":"*"
+    },
+    "scripts": {
+        "start":"node index.js"
+    }
+}

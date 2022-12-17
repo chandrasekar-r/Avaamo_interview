@@ -1,0 +1,17 @@
+version: '2'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nodejs
+    container_name: nodejs
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/home/node/app
+    command: node index.js
+
+
